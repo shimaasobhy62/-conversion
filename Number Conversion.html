@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="Number Conversion" name="description">
+        <title>Number converter</title>
+        <link rel="shortcut icon" href="Images/Diploma.png">
+        <link rel="stylesheet" href="CSS/Number Conversion.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <form id="calcform" name="calcform">
+            <h1>Number Conversion</h1>
+            <div class="form-group">
+                <div class="col">
+                    <input type="text" value=" " name="del" readonly hidden>
+                </div>
+            </div>
+            <!-- ASCII -->
+            <div class="form-group">
+                <label for="txt">ASCII Text</label>
+                <textarea id="txt" name="txt" rows="2" cols="60" class="form-control" placeholder="ABC ..." oninput="ConvertASCII()" autofocus></textarea>
+            </div>
+            <!-- Hexadecimal -->
+            <div class="form-group">
+                <label for="hex">Hex (bytes)</label>
+                <textarea id="hex" name="hex" rows="2" cols="60" class="form-control" placeholder="41 42 43 ..." oninput="ConvertHex()"></textarea>
+            </div>
+            <!-- Binary -->
+            <div class="form-group">
+                <label for="bin">Binary (bytes)</label>
+                <textarea id="bin" name="bin" rows="2" cols="60" class="form-control" placeholder="01000001 01000010 01000011 ..." oninput="ConvertBinary()"></textarea>
+            </div>
+            <!-- Decimal -->
+            <div class="form-group">
+                <label for="dec">Decimal (bytes)</label>
+                <textarea id="dec" name="dec" rows="2" cols="60" class="form-control" placeholder="65 66 67 ..." oninput="ConvertDecimal()"></textarea>
+            </div>
+            <!-- Length -->
+            <div class="form-group">
+                <label for="len">Length (bytes)</label>
+                <input type="text" id="len" name="len" class="form-control" readonly>
+            </div>
+            <!-- Prefix -->
+            <div class="form-group" id="prefix-space">
+                <input type="checkbox" id="prefix" class="form-check-input" onchange="ConvertASCII()">
+                <label for="prefix" class="form-check-label">0x/0b prefix</label>
+            </div>
+            <div class="ascii-table">
+                <a href="ASCII Table.html" target="_blank">ASCII Table</a>
+            </div>
+            <!-- Reset -->
+            <div class="form-group">
+                <button type="reset" title="Reset"><span>&times;</span> Reset</button>
+            </div>
+        </form>   
+        <script src="Java Script/Number Conversion.js"></script>
+    </body>
+</html>

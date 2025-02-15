@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    background-color: #9FD9CE;
+}
+
+#calcform {
+    width: 630px;
+    padding: 30px;
+    margin: auto;
+    background: #EBF9F4;
+    border: 1px #ddd solid;
+    border-radius: 7px;
+    margin-top: 3vh; /* vh => viewport height ... 1vh => 1% from viewport */
+    box-shadow: 5px 5px 10px #7ab4a2; /* box-shadow: h v blur color */ 
+}
+
+#calcform h1 {
+    font-size: 2rem; /* rem => Root Time (html) */
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#calcform .form-group {
+    margin-bottom: 1rem;
+}
+
+#calcform label {
+    color: #222;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+#calcform textarea {
+    max-width: 600px;
+    font-family: monospace;
+    overflow: auto;
+    resize: vertical; /* the user can resize the vertical */
+}
+
+#calcform .form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+#calcform input[type=text] {
+    max-width: 600px;
+    background-color: #f0f7f5;
+    opacity: 0.5;
+}
+
+#calcform input[type=checkbox] {
+    box-sizing: border-box;
+    position: absolute;
+    margin-top: 0.2rem; 
+    margin-left: -0.1rem;;
+}
+
+#calcform .form-check-label {
+    padding-left: 20px;
+}
+
+#calcform #prefix-space {
+    display: inline;
+}
+
+#calcform .ascii-table {
+    display: inline;
+}
+
+#calcform .ascii-table a {
+    margin-left: 390px;
+    color: #000;
+}
+
+#calcform button {
+    color: #fff;
+    background-color: #386B61;
+    width: 100px;
+    height: 45px;
+    border: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: 1s ease; /* specifies a transition effect with a slow start, then fast, then end slowly (this is default) */
+    margin: 10px 0 0 260px;
+}
+
+#calcform button:hover {
+    background-color: #4a907b;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+#calcform button:active {
+	transform: scale(0.9);
+}

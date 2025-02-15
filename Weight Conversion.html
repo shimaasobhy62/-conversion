@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="Weight Conversion" name="description">
+        <title>Weight Converter</title>
+        <link rel="shortcut icon" href="Images/Diploma.png">
+        <link rel="stylesheet" href="CSS/Weight Conversion.css">
+    </head>
+    <body>
+        <form>
+            <h1>Weight Conversion</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="ton">Metric Tons(t)</label>
+                        </td>
+                        <td>
+                            <input type="number" min="0" step="any" id="ton" name="ton" oninput="ConvertTon(this.value)" autofocus>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="kg">Kilograms(kg)</label>
+                        <td>
+                            <input type="number" min="0" step="any" id="kg" name="kg" oninput="ConvertKg(this.value)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="g">Grams(g)</label>
+                        </td>
+                        <td>
+                            <input type="number" min="0" step="any" id="g" name="g" oninput="ConvertGr(this.value)">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mg">Milligrams(mg)</label>
+                        </td>
+                        <td>
+                            <input type="number" min="0" step="any" id="mg" name="mg"oninput="ConvertMg(this.value)">
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mcg">Micrograms(mcg)</label>
+                        </td>
+                        <td>
+                            <input type="number" min="0" step="any" id="mcg" name="mcg" oninput="ConvertMcg(this.value)">
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="st">Stones(st)</label>
+                        </td>
+                        <td>
+                            <input type="number" min="0" step="any" id="st" name="st" oninput="ConvertSt(this.value)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lb">Pounds(lb)</label>
+                        </td>
+                        <td>
+                            <input input type="number" min="0" step="any" id="lb" name="lb" oninput="ConvertLb(this.value)">
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="oz">Ounces(oz)</label>
+                        </td>
+                        <td>
+                            <input type="number" min="0" step="any" id="oz" name="oz" oninput="ConvertOz(this.value)">
+                        </td>  
+                    </tr>
+                </tbody>
+            </table>
+        <div class="reset">
+            <input type="reset" value="Reset" class="btn">
+        </div>
+        </form>
+        <script src="Java Script/Weight Conversion.js"></script>
+    </body>
+</html>

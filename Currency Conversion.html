@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="Currency Conversion" name="description">
+        <title>Currency Conveter</title>
+        <link rel="shortcut icon" href="Images/Diploma.png">
+        <link rel="stylesheet" href="CSS/Currency Conversion.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <content>
+            <h1>Currency Converter</h1>
+            <label for="amount">Enter Amount</label>
+            <input type="number" id="amount" placeholder="0" value="1">
+            <div>
+                <table>
+                    <tr>
+                        <td class="from">From</td>
+                        <td class="to">To</td>
+                    </tr>
+                </table>
+                <img src="https://flagcdn.com/48x36/us.png" alt="flag" class="from-flag">
+                <select id="from_currency" onchange="FromFlag(this.value)">
+                    <option id="sarah" value="AE">AED</option>
+                    <option value="AR">ARS</option>
+                    <option value="AU">AUD</option>
+                    <option value="BG">BGN</option>
+                    <option value="BR">BRL</option>
+                    <option value="BS">BSD</option>
+                    <option value="CA">CAD</option>
+                    <option value="CH">CHF</option>
+                    <option value="CL">CLP</option>
+                    <option value="CN">CNY</option>
+                    <option value="CO">COP</option>
+                    <option value="CZ">CZK</option>
+                    <option value="DK">DKK</option>
+                    <option value="DO">DOP</option>
+                    <option value="EG">EGP</option>
+                    <option value="FR">EUR</option>
+                    <option value="FJ">FJD</option>
+                    <option value="GB">GBP</option>
+                    <option value="GT">GTQ</option>
+                    <option value="HK">HKD</option>
+                    <option value="HR">HRK</option>
+                    <option value="HU">HUF</option>
+                    <option value="ID">IDR</option>
+                    <option value="IL">ILS</option>
+                    <option value="IN">INR</option>
+                    <option value="IS">ISK</option>
+                    <option value="JP">JPY</option>
+                    <option value="KR">KRW</option>
+                    <option value="KZ">KZT</option>
+                    <option value="MX">MXN</option>
+                    <option value="MY">MYR</option>
+                    <option value="BV">NOK</option>
+                    <option value="NZ">NZD</option>
+                    <option value="PA">PAB</option>
+                    <option value="PE">PEN</option>
+                    <option value="PH">PHP</option>
+                    <option value="PK">PKR</option>
+                    <option value="PL">PLN</option>
+                    <option value="PY">PYG</option>
+                    <option value="RO">RON</option>
+                    <option value="RU">RUB</option>
+                    <option value="SA">SAR</option>
+                    <option value="SE">SEK</option>
+                    <option value="SG">SGD</option>
+                    <option value="TH">THB</option>
+                    <option value="TR">TRY</option>
+                    <option value="TW">TWD</option>
+                    <option value="UA">UAH</option>
+                    <option value="US" selected>USD</option>
+                    <option value="UY">UYU</option>
+                    <option value="VN">VND</option>
+                    <option value="ZA">ZAR</option>
+                </select>
+                <button id="exchange">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+                <img src="https://flagcdn.com/48x36/eg.png" alt="flag" class="to-flag">
+                <select id="to_currency" onchange="ToFlag(this.value)">
+                    <option value="AE">AED</option>
+                    <option value="AR">ARS</option>
+                    <option value="AU">AUD</option>
+                    <option value="BG">BGN</option>
+                    <option value="BR">BRL</option>
+                    <option value="BS">BSD</option>
+                    <option value="CA">CAD</option>
+                    <option value="CH">CHF</option>
+                    <option value="CL">CLP</option>
+                    <option value="CN">CNY</option>
+                    <option value="CO">COP</option>
+                    <option value="CZ">CZK</option>
+                    <option value="DK">DKK</option>
+                    <option value="DO">DOP</option>
+                    <option value="EG" selected>EGP</option>
+                    <option value="FR">EUR</option>
+                    <option value="FJ">FJD</option>
+                    <option value="GB">GBP</option>
+                    <option value="GT">GTQ</option>
+                    <option value="HK">HKD</option>
+                    <option value="HR">HRK</option>
+                    <option value="HU">HUF</option>
+                    <option value="ID">IDR</option>
+                    <option value="IL">ILS</option>
+                    <option value="IN">INR</option>
+                    <option value="IS">ISK</option>
+                    <option value="JP">JPY</option>
+                    <option value="KR">KRW</option>
+                    <option value="KZ">KZT</option>
+                    <option value="MX">MXN</option>
+                    <option value="MY">MYR</option>
+                    <option value="BV">NOK</option>
+                    <option value="NZ">NZD</option>
+                    <option value="PA">PAB</option>
+                    <option value="PE">PEN</option>
+                    <option value="PH">PHP</option>
+                    <option value="PK">PKR</option>
+                    <option value="PL">PLN</option>
+                    <option value="PY">PYG</option>
+                    <option value="RO">RON</option>
+                    <option value="RU">RUB</option>
+                    <option value="SA">SAR</option>
+                    <option value="SE">SEK</option>
+                    <option value="SG">SGD</option>
+                    <option value="TH">THB</option>
+                    <option value="TR">TRY</option>
+                    <option value="TW">TWD</option>
+                    <option value="UA">UAH</option>
+                    <option value="US">USD</option>
+                    <option value="UY">UYU</option>
+                    <option value="VN">VND</option>
+                    <option value="ZA">ZAR</option>
+                </select>
+            </div>
+            <p id="output-text">
+                <span id="from"></span> <span id="word">Getting Exchange Rate...</span>  <span id="to"></span>
+            </p>
+            <button id="exchange_button">Get Exchange Rate</button>
+        </content>
+        <script src="Java Script/Currency Conversion.js"></script>
+    </body>
+</html>

@@ -1,0 +1,171 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.first-page {
+    height: 721px;
+    position: relative;
+}
+
+.first-page .fleft-side {
+    height: 721px;
+    overflow: hidden;
+}
+
+.first-page .fleft-side img {  
+    margin-top: -38px;
+    height: 760px;
+    width: 73%;
+}
+
+.first-page .fright-side {
+    position: absolute;
+    top: 100px;
+    right: 3%;
+}
+
+.first-page .fright-side h1 {
+    font-size: 350%;
+    color: #0E0D0D;
+    text-align: center;
+}
+
+.first-page .fright-side h1 p {
+    font-size: 70%;
+    color: #154336;
+}
+
+.first-page .fright-side .info {
+    font-size: 200%;
+    padding-left: 7%;
+}
+
+.first-page .fright-side button {
+    width: 60%;
+    height: 70px;
+    border: 1px solid #707070;
+    border-radius: 38px;
+    color: #ffffff;
+    background-color: #386B61;
+    font-size: 27px;
+    margin-left: 85px;
+    margin-top: 10px;
+    transition: 1s ease;
+}
+
+.first-page .fright-side button:hover {
+    transform: scale(0.9);
+    background-color: #47887b;
+}
+
+.second-page {
+    height: 721px;
+    background: #E7F1E7;
+    position: relative;
+}
+
+.second-page .sleft-side {
+    background-color: #9FD9CE;
+    height: 721px;
+    width: 29%;
+    border-bottom-right-radius: 721px;
+    border-top-right-radius:721px;
+    position: relative;
+}
+
+.second-page .sleft-side .icon {
+    width: 20%;
+    height: 90px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.second-page .circle-one {
+    background-color: #D0F1E6;
+    height: 220px;
+    width: 50%;
+    border-radius: 220px;
+    position: absolute;
+    top: 110px;
+    left: 177px;
+}
+
+.second-page .circle-one div {
+    font-size: 285%;
+    font-family: cursive;
+    font-weight: 600;
+    color: #ffffff;
+    transform: translate(25px , 25px);
+    text-shadow: 5px 5px 10px #386b61;
+}
+
+.second-page .circle-two {
+    background-color: #E1F6EF;
+    height: 100px;
+    width: 23%;
+    border-radius: 70px;
+    position: absolute;
+    top: 315px;
+    left: 230px;
+}
+
+.second-page .circle-three {
+    background-color: #EBF9F4;
+    height: 170px;
+    width: 40%;
+    border-radius: 120px;
+    position: absolute;
+    top: 440px;
+    left: 50px;
+}
+
+.second-page .circle-four {
+    background-color: #D0F1E6;
+    height: 250px;
+    width: 27%;
+    border-bottom-right-radius: 250px;
+    border-top-right-radius: 250px;
+    position: absolute;
+    top: 220px;
+    left: -40px;
+}
+
+.second-page .sright-side {
+    position: absolute;
+    top: 150px;
+    right: 6%;
+}
+
+.second-page .sright-side button {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+    box-shadow: 5px 5px 10px #9edbcf;
+    transition: 1s ease;
+}
+
+.second-page .sright-side button img {
+    width: 100px;
+    height: 100px;
+}
+
+.second-page .sright-side button p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.second-page .sright-side .group2 {
+    margin-left: 100px;
+}
+
+.second-page .sright-side button:hover {
+    background-color: #A3DACF;
+    cursor: pointer;
+    transform: scale(0.9);
+    box-shadow: 5px 5px 10px #eee;
+}

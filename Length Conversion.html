@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="Length Conversion" name="description">
+        <title>Length Converter</title>
+        <link rel="shortcut icon" href="Images/Diploma.png">
+        <link rel="stylesheet" href="CSS/Length Conversion.css">
+    </head>
+    <body>
+        <form>
+            <h1>Length Conversion</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="km">Kilometer(km)</label>
+                        </td>
+                        <td>
+                            <input type="number" id="kilometer" min="0" step="any" id="km" name="km" oninput="ConvertKm(this.value)" autofocus>
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="m">Meter(m)</label>
+                        <td>
+                            <input type="number" id="meter" min="0" step="any" id="m" name="m" oninput="ConvertM(this.value)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="cm">Centimeter(cm)</label>
+                        </td>
+                        <td>
+                            <input type="number" id="centimeter" min="0" step="any" id="cm" name="cm" oninput="ConvertCm(this.value)">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mm">Millimeter(mm)</label>
+                        </td>
+                        <td>
+                            <input type="number" id="millimeter" min="0" step="any" id="mm" name="mm" oninput="ConvertMm(this.value)">
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mi">Mile(mi)</label>
+                        </td>
+                        <td>
+                            <input type="number"id="mile" min="0" step="any" id="mi" name="mi" oninput="ConvertMi(this.value)">
+                        </td>   
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="yd">Yard(yd)</label>
+                        </td>
+                        <td>
+                            <input type="number" id="yard" min="0" step="any" id="yd" name="yd" oninput="ConvertYd(this.value)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ft">Foot(ft)</label>
+                        </td>
+                        <td>
+                            <input type="number" id="foot" min="0" step="any" id="ft" name="ft" oninput="ConvertFt(this.value)">
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="in">Inch(in)</label>
+                        </td>
+                        <td>
+                            <input type="number" id="inch" min="0" step="any" id="in" name="in" oninput="ConvertIn(this.value)">
+                        </td>  
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nmi">Nautical Mile(nmi)</label>
+                        </td>
+                        <td>
+                            <input type="number" id="nauticalmile" min="0" step="any" id="nmi" name="nmi" oninput="ConvertNmi(this.value)">
+                        </td> 
+                    </tr>
+                </tbody>
+            </table>
+        <div class="reset">
+            <input type="reset" value="Reset" class="btn">
+        </div>
+        </form>
+        <script src="Java Script/Length Conversion.js"></script>
+    </body>
+</html>
